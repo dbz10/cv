@@ -1,0 +1,279 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{Daniel Ben-Zion}{}{} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+\href{mailto:dbzion@gmail.com}{dbzion@gmail.com}
+\href{https://www.linkedin.com/in/daniel-ben-zion-80a070163/}{linkedin/danielben-zion}
+\href{https://github.com/dbz10}{github/dbz}
+310-237-2569
+\section{languages}
+Python
+C++
+Julia
+Matlab
+Mathematica
+\section{tools}
+Numpy, Scipy
+Scikitlearn
+Tensorflow
+ITensor
+HTCondor
+Docker
+\section{technical skills}
+Statistical modelling
+Monte Carlo
+Tensor Algorithms
+Exact diagonalization
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+Physics Ph.D. candidate with 6 years of mathematical modeling and data analysis experience. I'm looking to apply my extensive background with high level analytical techniques and large scale numerical simulations to the data science field.
+\section{Education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2013--present}
+{Ph.D candidate, {\normalfont Physics}}
+{The University of California, San Diego}
+{Expected Graduation: Summer 2019
+%\emph{Research Interests:}  Most of my research lies at the intersection between traditional condensed matter physics, high energy theory, and quantum information theory. I have worked on a variety of topics including topological phases and strange metal phenomenology, with relevance to applications such as high temperature superconductivity and quantum computing. Current research projects include using quantum information inspired diagnostics to understand the phase diagrams of certain high temperature superconducting materials, and machine learning optimization of quantum monte carlo. 
+}
+
+%------------------------------------------------
+
+\entry
+{2009--2013}
+{Bachelor of Science, {\normalfont Physics}}
+{The University of Southern California}
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+\section{Research Experience}
+
+\begin{entrylist}
+
+%------------------------------------------------
+\talkentry
+{Topological Phases}
+{}
+{
+\vspace{-10pt}{
+\begin{itemize}
+\item Developed an analytical framework for constructing exactly solvable models of several kinds of topological phases in arbitrary dimensions. 
+\item One particular result of note was using this framework to construct a state with symmetry enriched topological order, of interest due to its potential relevance for quantum computing applications.
+\end{itemize}
+}
+}
+
+\talkentry
+{Strange Metals}
+{}
+{
+\vspace{-10pt}{
+\begin{itemize}
+\item Designed a model to reproduce and explain certain phenomena observed in high temperature superconducting materials.
+\item Wrote an implementation of the Density Matrix Renormalization Group algorithm for simulating one dimensional quantum systems to study the model numerically.
+\item Performed massively parallelized large scale numerical analysis using HTCondor. 
+\end{itemize}
+}
+}
+
+\talkentry
+{Kondo Lattice Models}
+{}
+{
+\vspace{-10pt}{
+\begin{itemize}
+\item Developed a diagnostic to characterize the way quantum information is distributed in multi-component systems. Addresses gaps in our understanding of the phase diagrams of certain high temperature superconducting materials.
+\item Implemented Monte Carlo in simulations in Julia to measure Renyi entropies of quantum wavefunctions.
+\item Designed and implemented a combination of Matrix Product State and Monte Carlo algorithms in C++ to measure entanglement entropy. 
+\end{itemize}
+}
+}
+
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\minientry
+{D. Ben-Zion, D. Das, and J. McGreevy, ``{\it Exactly solvable models of spin liquids with spinons,
+ and of three-dimensional topological paramagnets }", Phys. Rev. B 93, 155147 }
+
+%------------------------------------------------
+
+\minientry
+{D. Ben-Zion, and J. McGreevy "{\it 
+Strange metal from local quantum chaos}", Phys. Rev. B 97, 155117 }
+
+
+%------------------------------------------------
+
+\end{entrylist}
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Invited Talks}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\talkentry
+{Condensed Matter Seminar}
+{University of Southern Calfornia, Los Angeles}
+{Exactly solvable models of three dimensional topological phases }
+
+%------------------------------------------------
+
+\talkentry
+{Invited Scientific Talk}
+{Open Science Grid Annual Meeting, Salt Lake City}
+{\emph{Using high throughput computing to study non-Fermi liquids }\\
+Presented to an audience of non-physicists on how we were able to use high throughput computing to study interacting quantum systems. }
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	TEACHING SECTION
+%----------------------------------------------------------------------------------------
+\section{Teaching}
+
+\begin{entrylist}
+
+\entry
+{2013--present}
+{Teaching Assistant}
+{University of California, San Diego}
+{
+Over fifteen quarters of TAing experience at UCSD including various levels of labs and lectures with over 90\% student recommendation rate. 
+%Notable classes taught include mathematical and computational physics for six quarters, and upper division statistical mechanics twice.  
+}
+
+%------------------------------------------------
+
+\entry
+{2018}
+{Instructor of Record}
+{University of California, San Diego}
+{Instructor for Physics 1B during summer 2018. }
+
+%------------------------------------------------
+
+\end{entrylist}
+%%----------------------------------------------------------------------------------------
+%%	AWARDS SECTION
+%%----------------------------------------------------------------------------------------
+%
+%\section{awards}
+%
+%\begin{entrylist}
+%
+%%------------------------------------------------
+%
+%\entry
+%{2011}
+%{Postgraduate Scholarship}
+%{School of Business, The University of California}
+%{Awarded to the top student in their final year of a Bachelors degree. Mastered the art of filing accurate TPS reports.}
+%
+%%------------------------------------------------
+%
+%\end{entrylist}
+
+
+
+%%----------------------------------------------------------------------------------------
+%%	INTERESTS SECTION
+%%----------------------------------------------------------------------------------------
+%
+%\section{interests}
+%
+%\textbf{professional:} data analysis, company profiling, risk analysis, economics, web design, web app creation, software design, marketing \textbf{personal:} piano, chess, cooking, dancing, running
+%
+%%----------------------------------------------------------------------------------------
+%%	PUBLICATIONS SECTION
+%%----------------------------------------------------------------------------------------
+%
+%\section{publications}
+%
+%\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+%
+%\printbibsection{book}{books} % Print all books from the bibliography
+%
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=bibheading]
+%\end{refsection}
+%
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=bibheading]
+%\end{refsection}
+%
+%\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+%
+%\printbibsection{report}{research reports} % Print all research reports from the bibliography
+%
+%%----------------------------------------------------------------------------------------
+
+\end{document}
